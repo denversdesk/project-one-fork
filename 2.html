@@ -4,6 +4,7 @@
     <title>Contact Details Form</title>
     <script type="application/javascript">
         function checkdata(){
+		
       //create references to the input elements we wish to validate
       var username = document.getElementById("name");
       var emailid   = document.getElementById("email");
@@ -14,14 +15,17 @@
             username.focus();
             return false;
       }
+	  
      //Check if email field is empty
       if(emailid.value == ""){
             alert("Please enter the email");
             emailid.focus();
             return false;
       } 
+	  
      //If all is well return true.
       return true;
+	  
     }
     </script>
     </head>
